@@ -54,11 +54,11 @@ public class Burger {
         }
     }
 
-    public Burger(String bun, String meat, String cheese) {
+    public Burger(String bun, String meat, String cheese, int price) {
         this.bun = bun;
         this.meat = meat;
         this.cheese = cheese;
-        this.setPrice(6);
+        this.setPrice(6 + price);
     }
 
     public void allTheDetailsOfTheBurger(){

@@ -4,8 +4,8 @@ public class HealthyBurger extends Burger {
 
     private int additionsLimit = 6;
 
-    public HealthyBurger(String meat, String cheese) {
-        super("Brown Rye Roll", meat, cheese);
+    public HealthyBurger(String meat, String cheese, int price) {
+        super("Brown Rye Roll", meat, cheese, price);
     }
 
     public void addTopping(Additions topping) {
@@ -35,7 +35,7 @@ public class HealthyBurger extends Burger {
 
     public static void main(String[] args) {
 
-        HealthyBurger naturalBurger = new HealthyBurger("Angus", "Cheddar");
+        HealthyBurger naturalBurger = new HealthyBurger("Angus", "Cheddar",0);
 
         Additions Tomatoes = new Additions(1, "Tomatoes");
 

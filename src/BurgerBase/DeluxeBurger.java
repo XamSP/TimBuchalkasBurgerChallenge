@@ -2,8 +2,8 @@ package BurgerBase;
 
 public class DeluxeBurger extends Burger {
 
-    public DeluxeBurger(String bun, String meat, String cheese) {
-        super(bun, meat, cheese);
+    public DeluxeBurger(String bun, String meat, String cheese, int price) {
+        super(bun, meat, cheese, price);
 
         super.addTopping(new Additions(2, "Chips"));
         super.addTopping(new Additions(2, "Drink"));
@@ -22,7 +22,7 @@ public class DeluxeBurger extends Burger {
     }
 
     public static void main(String[] args) {
-        DeluxeBurger xBurger = new DeluxeBurger("Sesame Bun", "Super Angus", "Provolone");
+        DeluxeBurger xBurger = new DeluxeBurger("Sesame Bun", "Super Angus", "Provolone", 0);
 
         Additions Pickles = new Additions(1, "Pickles");
 
